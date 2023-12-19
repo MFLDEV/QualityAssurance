@@ -63,8 +63,8 @@ def notifyBuild(String buildStatus = 'STARTED'){
   
   buildStatus =  buildStatus ?: 'SUCCESSFUL'
   
-  def colorName = 'RED'
-  def colorCode = '#FF0000'
+  def colorName = 'yellow'
+  def colorCode = '#440020'
   def now = new Date()
   
   def subject = "${buildStatus}, Job: ${env.JOB_NAME} - Deployment Sequence: [${env.BUILD_NUMBER}] "
